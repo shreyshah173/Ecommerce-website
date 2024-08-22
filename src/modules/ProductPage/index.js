@@ -6,7 +6,7 @@ function Productpage() {
     const [categories, setCategories] = useState([])
     useEffect(() => {
         const fetchCategories = async () => {
-            const response = await fetch('http://fakestoreapi.com/Products');
+            const response = await fetch('https://fakestoreapi.com/Products');
             const data = await response.json();
             // console.log(data);
             setCategories(data);
