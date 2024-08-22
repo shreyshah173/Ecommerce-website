@@ -6,7 +6,7 @@ function Hero() {
     const [product, setProduct] = useState({})
     useEffect(() => {
         const fetchProduct = async () => {
-            const response = await fetch(`http://fakestoreapi.com/products/3`);
+            const response = await fetch(`https://fakestoreapi.com/products/3`);
             const data = await response.json();
             
             // console.log(data);

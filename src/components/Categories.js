@@ -5,7 +5,7 @@ function Categories() {
     const [categories, setCategories] = useState([])
     useEffect(() => {
         const fetchCategories = async () => {
-            const response = await fetch('http://fakestoreapi.com/Products/categories');
+            const response = await fetch('https://fakestoreapi.com/Products/categories');
             const data = await response.json();
             // console.log(data);
             setCategories(data);
